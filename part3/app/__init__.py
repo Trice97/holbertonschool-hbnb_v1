@@ -12,8 +12,12 @@ db = SQLAlchemy()
 def create_app(config_class="config.DevelopmentConfig"):
     app = Flask(__name__)
 
-    # Remplace juste par ça temporairement
-    CORS(app, origins="*")
+    # CORS ULTRA-PERMISSIF - SOLUTION DÉFINITIVE
+    CORS(app, 
+         resources={r"/*": {"origins": "*"}},
+         methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+         allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials", "Access-Control-Allow-Origin"],
+         supports_credentials=True)
     
     app.config.from_object(config_class)
     
