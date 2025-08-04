@@ -41,32 +41,29 @@
         <p>Note: X/5</p>
       </div>
       -->
-      <div class="review-card">
-          <p class="comment">Pretty cool hidden village, but i ve been abruptly awaken by a lunatic flotting in the air yelling <em>SHINRA TENSEÏ</em>  
-            , that crazyass lunatic destroyed half of the village i had to flea and i ve not been able to finish my book.</p>
-          <p class="user">— Kakashi H</p>
-          <p class="rating">Note: 1/5</p>
-      </div>
+      <div class="review-card"></div>
     </section>
-
-    <section id="add-review" style="display: none;">
+    <section id="add-review">
       <h2>Add a Review</h2>
-      <form id="review-form" class="add-review form">
+      <form id="review-form">
         <label for="review-text">Review:</label>
         <textarea id="review-text" name="review-text" required></textarea>
-
+        
         <label for="rating">Rating:</label>
         <select id="rating" name="rating" required>
-          <option value="">Select a rating</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
         </select>
-
-        <button type="submit">Submit</button>
+        
+        <button type="submit">Submit Review</button>
       </form>
+    <section id="add-review-link" style="display: none;">
+      <div class="text-center mt-lg">
+        <a href="add_review.html" class="details-button" id="add-review-btn">Add a Review</a>
+      </div>
     </section>
   </main>
 
